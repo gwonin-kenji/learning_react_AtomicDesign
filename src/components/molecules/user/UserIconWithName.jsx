@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { UserContext } from "../../providers/UseProvider";
 
 export const UserIconWithname = (props) => {
-  const { image, name, isAdmin } = props;
-  const context = useContext(UserContext);
-  console.log(context);
+  const { image, name } = props;
+  const { userInfo } = useContext(UserContext);
+  const isAdmin = userInfo ? userInfo.isAdmin : false;
 
   return (
     <SContainer>
