@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { BaseButton } from "./BaseButton";
 
 export const SecondaryButton = (props) => {
+  console.log("SecondaryButton");
+
   const { children, onClick } = props;
   return <SButton onClick={onClick}>{children}</SButton>;
 };
